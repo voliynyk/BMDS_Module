@@ -1,0 +1,163 @@
+
+
+ ==================================================================== 
+   	  Ten Berge Model. (Version: 1.0; Date: 12/26/2006) 
+  	  Input Data File: ClF5many2.(d)  
+  	  Gnuplot Plotting File:  ClF5many2.plt
+ 							Mon Apr 02 22:35:38 2007
+ ==================================================================== 
+
+ Dose-Response Analysis
+
+ Method of Maximum Likelihood according to: 					
+ D.J. Finney, 1977. Probit Analysis. Cambridge University Press. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+   Model: P(v1, v2, ...) = Link(B0 + B1*v1 + B2*v2 + ...)
+                   
+   Link is either Logit or Probit 				  
+   v1, v2, ... are the variables (transformations of the input parameters)
+
+
+   Number of input parameters = 3
+   Total number of observations = 68
+   Total number of records with missing values = 0
+
+
+     Conc mg/m3        Exposed           Dead
+
+         952.00            10.             1.
+        1278.00            10.             4.
+        1403.00            10.             6.
+        1631.00            10.             7.
+        1767.00            10.             9.
+
+        2028.00            10.             6.
+        2349.00            10.             9.
+         653.00            10.             0.
+         886.00            10.             0.
+        1006.00            10.             3.
+
+        1033.00            10.             6.
+        1267.00            10.             9.
+        1359.00            10.            10.
+         435.00            10.             0.
+         544.00            10.             1.
+
+         653.00            10.             4.
+         740.00            10.             8.
+         544.00            10.             2.
+         707.00            10.             4.
+         903.00            10.             7.
+
+         946.00            10.             7.
+        1060.00            10.             6.
+        1153.00            10.             9.
+        1256.00            10.             8.
+        1658.00            10.             9.
+
+        1958.00            15.            15.
+         381.00            10.             2.
+         489.00            10.             3.
+         636.00            10.             6.
+         653.00            10.             5.
+
+         761.00            10.             8.
+         788.00            10.             8.
+         903.00            10.             9.
+         952.00            10.            10.
+         190.00            10.             1.
+
+         256.00            10.             2.
+         337.00            10.             5.
+         408.00            10.             9.
+         914.00             4.             0.
+        1098.00             4.             1.
+
+        1631.00             4.             2.
+        1958.00             4.             2.
+        2409.00             4.             4.
+         555.00             4.             1.
+         816.00             4.             2.
+
+        1033.00             4.             2.
+        1213.00             4.             3.
+        1370.00             4.             3.
+        1490.00             4.             4.
+         343.00             4.             0.
+
+         598.00             4.             1.
+         696.00             4.             2.
+         778.00             4.             4.
+         924.00             4.             4.
+         897.00             4.             0.
+
+        1049.00             4.             1.
+        1223.00             4.             3.
+        1822.00             4.             3.
+        2148.00             4.             3.
+        1077.00             4.             0.
+
+        1185.00             4.             2.
+        1283.00             4.             4.
+         631.00             4.             0.
+         663.00             4.             1.
+         761.00             4.             1.
+
+        1028.00             4.             2.
+        1169.00             4.             2.
+        1213.00             4.             4.
+
+   Selection of observations from number  1 through  68
+
+   Transformation of input parameters
+   Conc mg/m3          is transformed logaritmically!
+   Minutes             is transformed logaritmically!
+   BW grams            is transformed logaritmically!
+
+   Probit link used without background response correction!
+
+   Variable  1  =  Transformed Conc mg/m3
+
+
+   Chi-Square          =  162.72
+   Degrees of Freedom  =  66   
+
+   B0 = -1.269e+000	   Student t  for B0 = -1.60
+   B1 = 9.440e-001	   Student t  for B1 = 8.10
+
+     variance  B00 = 6.297e-001
+   covariance  B01 = -9.227e-002
+     variance  B11 = 1.359e-002
+
+
+   Probability of correct model(p-value) is 0.000000
+   The prediction of the model is not sufficient. Use for estimation of the
+   95% confidence limits Student t with  66 degrees of freedom
+
+   Correction for variances Chi-Squares/Degrees of Freedom = 2.465
+
+
+   Estimation of Conc mg/m3
+   Response	 = 95.000000  percent
+
+   Estimated Conc mg/m3  95.000000 percent = 4.374e+003
+   Deviate Corresponding to Confidence Level of Interest = 0.950000
+   Lower limit Conc mg/m3  95.000000 percent  = 3.364e+003
+   Upper limit Conc mg/m3  95.000000 percent  = 6.363e+003
+
+
+   Probability of correct model(p-value) is 0.000000
+   The prediction of the model is not sufficient. Use for estimation of the
+   95% confidence limits Student t with  66 degrees of freedom
+
+   Correction for variances Chi-Squares/Degrees of Freedom = 2.465
+
+
+   Estimation of response
+   Conc mg/m3	 = 500.000000
+
+   Response   = 3.44e+001 percent
+   Deviate Corresponding to Confidence Level of Interest = 0.950000
+   LL-response   = 2.96e+001 percent
+   UL-response   = 3.94e+001 percent

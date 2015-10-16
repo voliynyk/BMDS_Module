@@ -1,0 +1,16 @@
+make[1]: Entering directory `/home/ashyhanov/Downloads/bmds_models/Assist'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/ashyhanov/Downloads/bmds_models/Assist'
+make[1]: Entering directory `/home/ashyhanov/Downloads/bmds_models/Cancer'
+gfortran -o cancer cancer.o LoadCommBloc.o getmle.o getcl.o donlp2usrfc.o -L../Assist  -lassist  
+/opt/rh/devtoolset-3/root/usr/libexec/gcc/x86_64-redhat-linux/4.9.2/ld: i386 architecture of input file `cancer.o' is incompatible with i386:x86-64 output
+/opt/rh/devtoolset-3/root/usr/libexec/gcc/x86_64-redhat-linux/4.9.2/ld: i386 architecture of input file `LoadCommBloc.o' is incompatible with i386:x86-64 output
+/opt/rh/devtoolset-3/root/usr/libexec/gcc/x86_64-redhat-linux/4.9.2/ld: i386 architecture of input file `getmle.o' is incompatible with i386:x86-64 output
+/opt/rh/devtoolset-3/root/usr/libexec/gcc/x86_64-redhat-linux/4.9.2/ld: i386 architecture of input file `getcl.o' is incompatible with i386:x86-64 output
+/opt/rh/devtoolset-3/root/usr/libexec/gcc/x86_64-redhat-linux/4.9.2/ld: i386 architecture of input file `donlp2usrfc.o' is incompatible with i386:x86-64 output
+/opt/rh/devtoolset-3/root/usr/libexec/gcc/x86_64-redhat-linux/4.9.2/ld: cancer.o: file class ELFCLASS32 incompatible with ELFCLASS64
+/opt/rh/devtoolset-3/root/usr/libexec/gcc/x86_64-redhat-linux/4.9.2/ld: final link failed: File in wrong format
+collect2: error: ld returned 1 exit status
+make[1]: *** [cancer] Error 1
+make[1]: Leaving directory `/home/ashyhanov/Downloads/bmds_models/Cancer'
+make: *** [all] Error 1

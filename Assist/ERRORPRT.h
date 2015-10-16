@@ -1,0 +1,4 @@
+
+
+void ERRORPRT ();
+void Warning ();

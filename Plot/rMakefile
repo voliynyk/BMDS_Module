@@ -1,0 +1,19 @@
+include ../../Makefile.conf
+BMDS_HOME = ../..
+
+EXE = $(EXEBASE)$(BINEXT)
+
+$(EXE): $(OBJS)
+	$(CC) -o $(EXEBASE) $(OBJS) -L$(BMDS_HOME)/Assist -lassist $(LMINGW) -lm
+	$(STRIP) $(EXE)
+	$(CP) $(EXE) $(BMDS_HOME)/bin/ 
+#	$(rm) $(EXE)
+
+clean:
+	rm -f *.o $(EXE)
+
+realclean: clean
+	rm -f *.~*~ *~
+
+TAGS:
+	etags *.c --include=$(BMDS_HOME)/Assist/TAGS
